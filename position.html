@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* width height 지정 안됐을 때 transform 사용임 */
+  div {
+    width: 30px;
+    height: 30px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #box1 {
+    position: relative;
+    background-color: black;
+    /* top: 0;
+    bottom: 0;
+    margin: auto; //body에 1000vh 지정한거여서 box1에 0설정 안해도 가운데로 감//*/
+  }
+
+  #box2 {
+    position: fixed;
+    background-color: red;
+  }
+
+  #box3 {
+    position: absolute;
+    background-color: green;
+    
+  }
+
+  #box2, #box3{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+
+</style>
+
+<body>
+  <div id="box1"></div>
+  <div id="box2"></div>
+  <div id="box3"></div>
+</body>
+
+</html>

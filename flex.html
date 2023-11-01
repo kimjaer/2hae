@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>유기적인 relative</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  li {
+    list-style: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 33.333%;
+    /* flex-grow: 1;  */
+    /* ↑ 몇개가 들어오던간에 옆으로 나열 (width 값이 없어야함)*/
+  }
+
+  /* li:last-child {
+    width: 100%;
+  } */
+  /* ↑ 마지막 것만 밑으로 내리고 창에 다 보이게 만들게 하려면 부모에게 flex-wrap이 있어야함*/
+
+li:nth-child(4n){
+  /* background-color: aqua; */
+  width: 100%;
+}
+/* ↑ 4번째로 오는 애들 전부 width 100% 주고 싶을 때 */
+
+
+</style>
+<body>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>4</li>
+    <li>4</li>
+    <li>4</li>
+    <li>4</li>
+    <li>4</li>
+    <li>4</li>
+    <li>4</li>
+    <li>4</li>
+    <li>4</li>
+    <li>4</li>
+
+  </ul>
+</body>
+</html>
